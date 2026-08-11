@@ -1,7 +1,3 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
-
-# Runtime output and downloaded/derived word lists are not source code.
-results/
-ku/

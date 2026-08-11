@@ -8,6 +8,21 @@ GET https://cloudflare.pay/api/check?tag=YOURTAG
 
 请仅在获得接口使用授权的情况下运行，并根据服务器响应调整请求速度。
 
+## 仓库内容
+
+- `check_tags.py`：多线程名称检测脚本
+- `run.ps1` / `run.cmd`：Windows 启动器
+- `ku/`：扫描使用的英文词库及整理后的有序词表
+- `results/`：扫描产生的可用、不可用、错误和按长度分类结果
+- `corr.png`：仓库维护者本人成功保留 `@corr` 的确认截图
+
+`results/` 中的数据是扫描时的历史快照。名称状态可能随时变化，实际注册前请
+重新检测。词库和结果文件一并提交，便于复现扫描顺序和检查已有输出。
+`ku/` 中第三方词库的权利归各自原作者所有；公开分发时应保留并遵守对应的
+上游许可证和来源说明。
+
+![仓库维护者成功保留 @corr](corr.png)
+
 ## 运行环境
 
 - Windows PowerShell
@@ -137,6 +152,24 @@ GET https://cloudflare.pay/api/check?tag=YOURTAG
 
 Only use this tool when you are authorized to access the endpoint. Adjust the
 request rate according to the server response.
+
+## Repository Contents
+
+- `check_tags.py`: multithreaded tag availability checker
+- `run.ps1` / `run.cmd`: Windows launchers
+- `ku/`: English source word lists and the merged ordered input list
+- `results/`: available, reserved, error, and length-grouped scan output
+- `corr.png`: reservation confirmation for `@corr`, registered by the repository owner
+
+Data under `results/` is a historical snapshot taken during scanning. Tag
+availability can change at any time, so recheck a tag before registration. The
+word lists and results are included to make the scan order and existing output
+reproducible.
+Third-party word lists under `ku/` remain the property of their respective
+authors. Preserve and comply with their upstream licenses and attribution when
+redistributing them.
+
+![The repository owner successfully reserved @corr](corr.png)
 
 ## Requirements
 
